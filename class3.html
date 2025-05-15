@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Select Your Class</title>
+  <title>Class 3 Subjects</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+      background: linear-gradient(135deg, #f9fafc, #e0e7ff);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -46,13 +46,13 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       gap: 1rem;
       width: 100%;
       max-width: 800px;
     }
 
-    .class-btn {
+    .subject-btn {
       background-color: #4f46e5;
       color: white;
       border: none;
@@ -64,7 +64,7 @@
       transition: background 0.3s;
     }
 
-    .class-btn:hover {
+    .subject-btn:hover {
       background-color: #4338ca;
     }
 
@@ -77,20 +77,18 @@
 </head>
 <body>
   <div class="header">
-    <button class="back-btn" onclick="location.href='index.html'">← Back</button>
-    <h1>Select Your Class</h1>
+    <button class="back-btn" onclick="location.href='home.html'">← Back</button>
+    <h1>Class 1 Subjects</h1>
     <div style="width: 80px;"></div> <!-- spacing balance -->
   </div>
 
   <div class="grid">
-    <!-- Generate Class 1 to 12 buttons -->
-    <script>
-      for (let i = 1; i <= 12; i++) {
-        document.write(`
-          <button class="class-btn" onclick="location.href='class${i}.html'">Class ${i}</button>
-        `);
-      }
-    </script>
+    <button class="subject-btn" onclick="location.href='class1-math.html'">Math</button>
+    <button class="subject-btn" onclick="location.href='class1-science.html'">Science</button>
+    <button class="subject-btn" onclick="location.href='class1-social.html'">Social Science</button>
+    <button class="subject-btn" onclick="location.href='class1-english.html'">English</button>
+    <button class="subject-btn" onclick="location.href='class1-hindi.html'">Hindi</button>
+    <button class="subject-btn" onclick="location.href='class1-tamil.html'">Tamil</button>
   </div>
 </body>
 </html>
