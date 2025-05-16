@@ -1,6 +1,8 @@
-well designed simple-words-and-sentences.html page showing: 
+well designed tamil-short-stories.html page showing: 
 A simple and elobrated content with example, and neat realestic flowachart if only applicable, 
 and with neat realestic diagram if only applicable and required and with perfect formulaes 
-if only applicable and required, with back button  onclick="location.href='class1-english.html'"
+if only applicable and required, with back button  onclick="location.href='class1-tamil.html'"
 
 well designed class1-social.html page showing:  buttons, with back button  onclick="location.href='class1.html'"
+
+remove duplicates, and given in same order:  
