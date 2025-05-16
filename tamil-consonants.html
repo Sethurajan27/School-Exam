@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>தமிழ் மெய்யெழுத்துகள்</title>
+  <style>
+    body {
+      font-family: 'Noto Sans Tamil', sans-serif, Arial;
+      background-color: #f3fff5;
+      color: #2f4f4f;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #006400;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #2e8b57;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .example-box {
+      background-color: #e6ffee;
+      padding: 15px;
+      border-left: 6px solid #2e8b57;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .consonant-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+      margin: 20px 0;
+      background-color: #f0fff0;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 22px;
+    }
+    .consonant-grid div {
+      background-color: #ccf5e1;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .flowchart {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #e9fff5;
+      border-radius: 12px;
+      border: 2px solid #2e8b57;
+      color: #2f4f4f;
+      font-weight: 600;
+      text-align: center;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ul.flowchart-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+      text-align: left;
+    }
+    ul.flowchart-list li {
+      padding: 10px 0;
+      border-left: 6px solid #2e8b57;
+      margin-left: 20px;
+      font-weight: 600;
+      position: relative;
+    }
+    ul.flowchart-list li::before {
+      content: "➤";
+      position: absolute;
+      left: -20px;
+      color: #2e8b57;
+      font-size: 18px;
+    }
+    button {
+      display: block;
+      margin: 50px auto 0;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #246b45;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>மெய்யெழுத்துகள் - Tamil Consonants</h1>
+
+  <section>
+    <h2>அறிமுகம்</h2>
+    <p>தமிழில் மெய்யெழுத்துகள் <strong>18</strong> உள்ளன. இவை தனியாக ஒரு முழு ஒலியாகப் பயன்படுத்தப்படுவதில்லை, ஆனால் உயிரெழுத்துகளுடன் சேர்ந்து உயிர்மெய்யெழுத்துகள் ஆகின்றன.</p>
+  </section>
+
+  <section class="consonant-grid">
+    <div>க்</div>
+    <div>ங்</div>
+    <div>ச்</div>
+    <div>ஞ்</div>
+    <div>ட்</div>
+    <div>ண்</div>
+    <div>த்</div>
+    <div>ந்</div>
+    <div>ப்</div>
+    <div>ம்</div>
+    <div>ய்</div>
+    <div>ர்</div>
+    <div>ல்</div>
+    <div>வ்</div>
+    <div>ழ்</div>
+    <div>ள்</div>
+    <div>ற்</div>
+    <div>ன்</div>
+  </section>
+
+  <section class="example-box">
+    <h2>உதாரணங்கள்</h2>
+    <p><strong>க் + அ = க</strong> → <em>கடல்</em></p>
+    <p><strong>ச் + உ = சு</strong> → <em>சுந்தர்</em></p>
+    <p><strong>ப் + இ = பி</strong> → <em>பிழை</em></p>
+  </section>
+
+  <section class="flowchart">
+    <h2>மெய்யெழுத்துகளை கற்றுக்கொள்ளும் படிகள்</h2>
+    <ul class="flowchart-list">
+      <li>மெய்யெழுத்தின் ஒலியை கேட்டல்</li>
+      <li>உயிரெழுத்துடன் சேர்த்து சொற்கள் உருவாக்கம்</li>
+      <li>படம் மற்றும் ஒலி உதவியுடன் பயிற்சி</li>
+      <li>எழுத்துக்களை கை எழுத்தாக எழுத பழகு</li>
+    </ul>
+  </section>
+
+  <button onclick="location.href='class1-tamil.html'">Back</button>
+
+</body>
+</html>

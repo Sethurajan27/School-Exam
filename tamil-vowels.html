@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>தமிழ் உயிரெழுத்துகள்</title>
+  <style>
+    body {
+      font-family: 'Noto Sans Tamil', sans-serif, Arial;
+      background-color: #fefbe9;
+      color: #4e3629;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #8b4513;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #a0522d;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .example-box {
+      background-color: #f8efd4;
+      padding: 15px;
+      border-left: 6px solid #c08552;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .vowel-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+      margin: 20px 0;
+      background-color: #fff8e1;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 22px;
+    }
+    .vowel-grid div {
+      background-color: #ffeeb1;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .flowchart {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fff4d9;
+      border-radius: 12px;
+      border: 2px solid #c08552;
+      color: #5c4033;
+      font-weight: 600;
+      text-align: center;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ul.flowchart-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+      text-align: left;
+    }
+    ul.flowchart-list li {
+      padding: 10px 0;
+      border-left: 6px solid #c08552;
+      margin-left: 20px;
+      font-weight: 600;
+      position: relative;
+    }
+    ul.flowchart-list li::before {
+      content: "➤";
+      position: absolute;
+      left: -20px;
+      color: #c08552;
+      font-size: 18px;
+    }
+    button {
+      display: block;
+      margin: 50px auto 0;
+      background-color: #a0522d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #7b3f1d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>உயிரெழுத்துகள் - Tamil Vowels</h1>
+
+  <section>
+    <h2>அறிமுகம்</h2>
+    <p>தமிழ் மொழியில் <strong>உயிரெழுத்துகள்</strong> என்பது 12 எழுத்துகளைக் குறிக்கின்றன. இவை ஒவ்வொன்றும் ஒரு ஒலியை கொண்டவை.</p>
+  </section>
+
+  <section class="vowel-grid">
+    <div>அ</div>
+    <div>ஆ</div>
+    <div>இ</div>
+    <div>ஈ</div>
+    <div>உ</div>
+    <div>ஊ</div>
+    <div>எ</div>
+    <div>ஏ</div>
+    <div>ஐ</div>
+    <div>ஒ</div>
+    <div>ஓ</div>
+    <div>ஔ</div>
+  </section>
+
+  <section class="example-box">
+    <h2>உதாரணங்கள்</h2>
+    <p><strong>அ</strong> - அப்பா, <strong>இ</strong> - இலை, <strong>உ</strong> - உலர்</p>
+    <p>ஒவ்வொரு உயிரெழுத்தும் தனிப்பட்ட ஒலி மற்றும் அர்த்தத்தைக் கொண்டிருக்கும்.</p>
+  </section>
+
+  <section class="flowchart">
+    <h2>உயிரெழுத்துகளை கற்றுக்கொள்ளும் படிகள்</h2>
+    <ul class="flowchart-list">
+      <li>ஒவ்வொரு எழுத்தையும் சொல் மற்றும் ஒலி கேள்</li>
+      <li>எழுத்துக்களை கை எழுத்தாக பழகு</li>
+      <li>ஒலி மற்றும் எழுத்தை இணைத்து படி</li>
+      <li>ஒற்றை எழுத்துப் படங்களுடன் கற்பி</li>
+      <li>புதிய வார்த்தைகளை உயிரெழுத்துகளால் உருவாக்கு</li>
+    </ul>
+  </section>
+
+  <button onclick="location.href='class1-tamil.html'">Back</button>
+
+</body>
+</html>
