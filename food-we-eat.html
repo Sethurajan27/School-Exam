@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Food We Eat</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fffaf0;
+    margin: 0;
+    padding: 2rem;
+    color: #34495e;
+  }
+  .container {
+    max-width: 820px;
+    margin: auto;
+    background: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 26px rgba(241, 196, 15, 0.3);
+  }
+  h1 {
+    text-align: center;
+    color: #f1c40f;
+    font-size: 2.8rem;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    margin-bottom: 1.6rem;
+  }
+  .example {
+    background-color: #fcf3cf;
+    border-left: 6px solid #f1c40f;
+    padding: 1rem 1.4rem;
+    margin: 1.2rem 0 2.5rem 0;
+    border-radius: 9px;
+    font-style: italic;
+    color: #b7950b;
+  }
+
+  /* Flowchart */
+  .flowchart {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    margin: 3rem 0 3.5rem 0;
+    flex-wrap: wrap;
+  }
+  .flowchart .box {
+    background: #f1c40f;
+    color: white;
+    padding: 1.4rem 2.8rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 26px rgba(241, 196, 15, 0.7);
+    font-weight: 600;
+    text-align: center;
+    min-width: 170px;
+    position: relative;
+    flex: 1;
+    max-width: 190px;
+    user-select: none;
+  }
+  .flowchart .box:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.6rem;
+    color: #f1c40f;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  /* Diagram */
+  .diagram {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3.8rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  .diagram .category {
+    background: #fcf3cf;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    box-shadow: 0 8px 28px rgba(241, 196, 15, 0.3);
+    flex: 1 1 320px;
+    min-width: 300px;
+    user-select: none;
+  }
+  .diagram h3 {
+    text-align: center;
+    color: #b7950b;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+  }
+  .diagram ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    color: #7d6608;
+  }
+
+  button.back-btn {
+    display: block;
+    margin: 3.5rem auto 0;
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(241, 196, 15, 0.7);
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  button.back-btn:hover {
+    background-color: #a67c00;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Food We Eat</h1>
+
+    <p>Food is what we eat every day to stay healthy and strong. Different foods give us energy, help us grow, and keep our body working well.</p>
+
+    <p>Foods come from different sources like plants, animals, and even the earth. We eat fruits, vegetables, grains, meat, dairy, and many other types of food.</p>
+
+    <div class="example">
+      <strong>Example:</strong> An apple is a fruit that grows on a tree, while milk comes from cows. Both are food but come from different sources.
+    </div>
+
+    <div class="flowchart" aria-label="Types of food flowchart">
+      <div class="box">Food</div>
+      <div class="box">Plant-based Food</div>
+      <div class="box">Animal-based Food</div>
+      <div class="box">Others</div>
+    </div>
+
+    <div class="diagram" aria-label="Food sources diagram">
+      <div class="category">
+        <h3>Plant-based Food</h3>
+        <ul>
+          <li>Fruits (Apple, Banana, Orange)</li>
+          <li>Vegetables (Carrot, Spinach, Potato)</li>
+          <li>Grains (Rice, Wheat, Corn)</li>
+          <li>Nuts and Seeds</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Animal-based Food</h3>
+        <ul>
+          <li>Milk and Dairy Products</li>
+          <li>Meat (Chicken, Beef, Fish)</li>
+          <li>Eggs</li>
+          <li>Honey</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Others</h3>
+        <ul>
+          <li>Water</li>
+          <li>Salt and Spices</li>
+          <li>Oils and Fats</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="location.href='class1-science.html'">← Back</button>
+  </div>
+</body>
+</html>

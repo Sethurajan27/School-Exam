@@ -1,0 +1,6 @@
+well designed food-and-nutrition.html page showing: 
+A simple and elobrated content with example, and neat realestic flowachart if only applicable, 
+and with neat realestic diagram if only applicable and required, 
+with back button  onclick="location.href='class1-science.html'"
+
+well designed class1-science.html page showing:  buttons, with back button  onclick="location.href='class1.html'"

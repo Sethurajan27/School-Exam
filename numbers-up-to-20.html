@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Numbers up to 20 - Class 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafe;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      background-color: #d1d5db;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .back-btn:hover {
+      background-color: #9ca3af;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #374151;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .number-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: #4f46e5;
+      color: white;
+      border-radius: 1rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 90px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .number {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <button class="back-btn" onclick="location.href='class1-math.html'">← Back</button>
+      <h1>Numbers up to 20</h1>
+      <div style="width: 80px;"></div>
+    </div>
+
+    <div class="description">
+      <p>Let’s learn numbers from <strong>1 to 20</strong>. These numbers help us count and understand quantity better. Below are the numbers along with fun emoji examples to make learning exciting!</p>
+    </div>
+
+    <div class="number-grid">
+      <!-- You can change emojis or use consistent ones like 🍎 for all -->
+      <div class="card"><div class="number">1</div><div class="emoji">🍎</div></div>
+      <div class="card"><div class="number">2</div><div class="emoji">🍎🍎</div></div>
+      <div class="card"><div class="number">3</div><div class="emoji">🍎🍎🍎</div></div>
+      <div class="card"><div class="number">4</div><div class="emoji">🍎🍎🍎🍎</div></div>
+      <div class="card"><div class="number">5</div><div class="emoji">🍎🍎🍎🍎🍎</div></div>
+      <div class="card"><div class="number">6</div><div class="emoji">🍎 x6</div></div>
+      <div class="card"><div class="number">7</div><div class="emoji">🍎 x7</div></div>
+      <div class="card"><div class="number">8</div><div class="emoji">🍎 x8</div></div>
+      <div class="card"><div class="number">9</div><div class="emoji">🍎 x9</div></div>
+      <div class="card"><div class="number">10</div><div class="emoji">🍎 x10</div></div>
+      <div class="card"><div class="number">11</div><div class="emoji">🍎 x11</div></div>
+      <div class="card"><div class="number">12</div><div class="emoji">🍎 x12</div></div>
+      <div class="card"><div class="number">13</div><div class="emoji">🍎 x13</div></div>
+      <div class="card"><div class="number">14</div><div class="emoji">🍎 x14</div></div>
+      <div class="card"><div class="number">15</div><div class="emoji">🍎 x15</div></div>
+      <div class="card"><div class="number">16</div><div class="emoji">🍎 x16</div></div>
+      <div class="card"><div class="number">17</div><div class="emoji">🍎 x17</div></div>
+      <div class="card"><div class="number">18</div><div class="emoji">🍎 x18</div></div>
+      <div class="card"><div class="number">19</div><div class="emoji">🍎 x19</div></div>
+      <div class="card"><div class="number">20</div><div class="emoji">🍎 x20</div></div>
+    </div>
+
+    <div class="footer-note">
+      Try counting your pencils, toys, or books up to 20!
+    </div>
+  </div>
+</body>
+</html>

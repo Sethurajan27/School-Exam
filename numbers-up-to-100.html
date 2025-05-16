@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Numbers up to 100 - Class 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f3f4f6;
+      padding: 2rem 1rem;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      background-color: #9ca3af;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: white;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #6b7280;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 auto;
+      flex-grow: 1;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #374151;
+    }
+
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      gap: 0.8rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .number-box {
+      background-color: #4f46e5;
+      color: white;
+      border-radius: 0.5rem;
+      padding: 0.6rem 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 2px 5px rgba(79, 70, 229, 0.3);
+      user-select: none;
+      transition: transform 0.15s ease;
+    }
+
+    .number-box:hover {
+      transform: scale(1.15);
+      box-shadow: 0 4px 10px rgba(79, 70, 229, 0.6);
+      cursor: default;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="back-btn" onclick="location.href='class1-math.html'">← Back</button>
+      <h1>Numbers up to 100</h1>
+      <div style="width: 80px;"></div>
+    </div>
+
+    <div class="description">
+      <p>
+        Numbers from <strong>1 to 100</strong> help us count many things around us — like toys, books, or days in school.
+        Let’s look at all these numbers and get comfortable with counting up to one hundred!
+      </p>
+    </div>
+
+    <div class="numbers-grid">
+      <!-- Generate numbers 1 to 100 -->
+      <!-- You can generate this using a loop in JS or write manually -->
+      <!-- Here hard-coded for simplicity -->
+      <script>
+        const container = document.currentScript.parentNode;
+        for(let i = 1; i <= 100; i++) {
+          const div = document.createElement('div');
+          div.className = 'number-box';
+          div.textContent = i;
+          container.appendChild(div);
+        }
+      </script>
+    </div>
+
+    <div class="footer-note">
+      Practice counting objects, steps, or anything you see, up to 100!
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Animals Around Us</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0faf7;
+    margin: 0;
+    padding: 2rem;
+    color: #2c3e50;
+  }
+  .container {
+    max-width: 820px;
+    margin: auto;
+    background: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 7px 25px rgba(46, 204, 113, 0.25);
+  }
+  h1 {
+    text-align: center;
+    color: #27ae60;
+    font-size: 2.8rem;
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+  .example {
+    background-color: #d4efdf;
+    border-left: 6px solid #27ae60;
+    padding: 1.1rem 1.4rem;
+    margin: 1rem 0 2.5rem 0;
+    border-radius: 8px;
+    font-style: italic;
+    color: #1e8449;
+  }
+
+  /* Flowchart */
+  .flowchart {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2.5rem 0 3rem 0;
+    flex-wrap: wrap;
+  }
+  .flowchart .box {
+    background: #27ae60;
+    color: white;
+    padding: 1.3rem 2.6rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(39, 174, 96, 0.55);
+    font-weight: 600;
+    text-align: center;
+    min-width: 160px;
+    position: relative;
+    flex: 1;
+    max-width: 190px;
+  }
+  .flowchart .box:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    color: #27ae60;
+    font-weight: bold;
+  }
+
+  /* Diagram */
+  .diagram {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3.5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  .diagram .category {
+    background: #d4efdf;
+    border-radius: 18px;
+    padding: 1.8rem 2.8rem;
+    box-shadow: 0 6px 22px rgba(39, 174, 96, 0.3);
+    flex: 1 1 320px;
+    min-width: 300px;
+  }
+  .diagram h3 {
+    text-align: center;
+    color: #196f3d;
+    margin-bottom: 1.3rem;
+    font-weight: 700;
+  }
+  .diagram ul {
+    list-style-type: disc;
+    padding-left: 1.9rem;
+    font-size: 1.15rem;
+    color: #145a32;
+  }
+
+  button.back-btn {
+    display: block;
+    margin: 3rem auto 0;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 1.1rem 3.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(39, 174, 96, 0.6);
+    transition: background-color 0.3s ease;
+  }
+  button.back-btn:hover {
+    background-color: #145a32;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Animals Around Us</h1>
+
+    <p>Animals live all around us—in our homes, gardens, farms, forests, and rivers. They are important because they help the environment stay healthy and provide us with many useful things.</p>
+
+    <p>We can find different types of animals based on where they live and how they behave. Some live on land, some in water, and others can fly in the sky.</p>
+
+    <div class="example">
+      <strong>Example:</strong> A dog is a land animal that lives with people, while a fish lives in water. Birds like sparrows fly in the air.
+    </div>
+
+    <div class="flowchart" aria-label="Types of animals around us">
+      <div class="box">Animals Around Us</div>
+      <div class="box">Land Animals</div>
+      <div class="box">Water Animals</div>
+      <div class="box">Air Animals</div>
+    </div>
+
+    <div class="diagram" aria-label="Examples of animals by type">
+      <div class="category">
+        <h3>Land Animals</h3>
+        <ul>
+          <li>Dogs and Cats</li>
+          <li>Elephants</li>
+          <li>Monkeys</li>
+          <li>Cows and Goats</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Water Animals</h3>
+        <ul>
+          <li>Fish like Goldfish and Sharks</li>
+          <li>Turtles</li>
+          <li>Dolphins</li>
+          <li>Crabs</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Air Animals</h3>
+        <ul>
+          <li>Sparrows</li>
+          <li>Eagles</li>
+          <li>Butterflies</li>
+          <li>Bats</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="location.href='class1-science.html'">← Back</button>
+  </div>
+</body>
+</html>

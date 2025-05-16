@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The World of Animals</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 2rem;
+      color: #34495e;
+    }
+    .container {
+      max-width: 820px;
+      margin: auto;
+      background: #ffffff;
+      padding: 2rem 3rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(230, 126, 34, 0.25);
+    }
+    h1 {
+      text-align: center;
+      color: #e67e22;
+      font-size: 2.8rem;
+      margin-bottom: 1.8rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .example {
+      background-color: #fdebd0;
+      border-left: 6px solid #e67e22;
+      padding: 1rem 1.3rem;
+      margin: 1rem 0 2rem 0;
+      border-radius: 7px;
+      font-style: italic;
+      color: #ba4a00;
+    }
+    /* Flowchart */
+    .flowchart {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0 3rem 0;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .flowchart .box {
+      background: #e67e22;
+      color: white;
+      padding: 1.2rem 2.4rem;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(230, 126, 34, 0.7);
+      font-weight: 600;
+      text-align: center;
+      min-width: 150px;
+      position: relative;
+      flex: 1;
+      max-width: 180px;
+      user-select: none;
+    }
+    /* Arrows for flowchart */
+    .flowchart .box:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2.2rem;
+      color: #e67e22;
+      font-weight: bold;
+      user-select: none;
+    }
+    /* Diagram */
+    .diagram {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 3rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .diagram .category {
+      background: #fbeee6;
+      border-radius: 16px;
+      padding: 1.7rem 2.5rem;
+      box-shadow: 0 6px 18px rgba(230, 126, 34, 0.3);
+      flex: 1 1 320px;
+      min-width: 280px;
+    }
+    .diagram h3 {
+      text-align: center;
+      color: #d35400;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      user-select: none;
+    }
+    .diagram ul {
+      list-style-type: disc;
+      padding-left: 1.8rem;
+      font-size: 1.15rem;
+      color: #7e5109;
+      user-select: none;
+    }
+    button.back-btn {
+      display: block;
+      margin: 3rem auto 0;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 14px;
+      cursor: pointer;
+      box-shadow: 0 7px 18px rgba(230, 126, 34, 0.6);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    button.back-btn:hover {
+      background-color: #a84300;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The World of Animals</h1>
+
+    <p>Animals are living creatures found everywhere around us — on land, in water, and even in the air. They come in many shapes, sizes, and types. Animals help keep nature balanced and provide us with many useful things.</p>
+
+    <p>Animals are classified into groups based on their features. For example, some animals have fur and feed their babies with milk, while others have scales and live in water.</p>
+
+    <div class="example">
+      <strong>Example:</strong> A dog is a mammal because it has fur and feeds its young with milk. A fish is different because it lives in water and has scales.
+    </div>
+
+    <div class="flowchart" aria-label="Animal classification flowchart">
+      <div class="box">Animals</div>
+      <div class="box">Vertebrates</div>
+      <div class="box">Mammals</div>
+      <div class="box">Dogs, Cats, Humans</div>
+    </div>
+
+    <div class="diagram" aria-label="Types of animals">
+      <div class="category">
+        <h3>Mammals</h3>
+        <ul>
+          <li>Have fur or hair</li>
+          <li>Feed babies with milk</li>
+          <li>Examples: Dog, Cat, Elephant</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Birds</h3>
+        <ul>
+          <li>Have feathers and wings</li>
+          <li>Lay eggs</li>
+          <li>Examples: Sparrow, Eagle, Parrot</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Fish</h3>
+        <ul>
+          <li>Have scales and fins</li>
+          <li>Live in water</li>
+          <li>Examples: Goldfish, Shark, Trout</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="location.href='class1-science.html'">← Back</button>
+  </div>
+</body>
+</html>

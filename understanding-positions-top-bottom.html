@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Understanding Positions: Top & Bottom - Class 1</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #1e293b;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 6px 15px rgba(30, 41, 59, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2563eb;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin-bottom: 1.3rem;
+    }
+    .section-title {
+      font-weight: 600;
+      color: #3b82f6;
+      margin-top: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .example-box {
+      background-color: #dbeafe;
+      border-left: 6px solid #2563eb;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .diagram {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+    .box {
+      width: 180px;
+      height: 60px;
+      background-color: #60a5fa;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-radius: 0.6rem;
+      margin: 0.5rem 0;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.4);
+    }
+    .label {
+      font-weight: 600;
+      color: #1e293b;
+      margin-top: 0.4rem;
+      font-size: 1rem;
+    }
+    .back-btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .back-btn:hover {
+      background-color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Understanding Positions: Top & Bottom</h1>
+
+    <p>Positions tell us where something is placed compared to other things. Two common positions are <strong>top</strong> and <strong>bottom</strong>.</p>
+
+    <h2 class="section-title">What Does "Top" Mean?</h2>
+    <p>The <strong>top</strong> is the highest part or point of something.</p>
+
+    <h2 class="section-title">What Does "Bottom" Mean?</h2>
+    <p>The <strong>bottom</strong> is the lowest part or point of something.</p>
+
+    <div class="example-box">
+      <strong>Example:</strong>
+      <div class="diagram" aria-label="Diagram showing top and bottom positions">
+        <div class="box">Top</div>
+        <div class="label">This box is at the top</div>
+        <div class="box" style="background-color: #2563eb; margin-top: 3rem;">Bottom</div>
+        <div class="label">This box is at the bottom</div>
+      </div>
+      <p>In a stack of books, the book on the highest level is at the <strong>top</strong>, and the one on the lowest level is at the <strong>bottom</strong>.</p>
+    </div>
+
+    <button class="back-btn" onclick="location.href='class1-math.html'">← Back</button>
+  </div>
+</body>
+</html>

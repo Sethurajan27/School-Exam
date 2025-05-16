@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human Body</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f9ff;
+      margin: 0;
+      padding: 2rem;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #007acc;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+    .example {
+      background: #e6f7ff;
+      border-left: 6px solid #007acc;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .flowchart {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    .flowchart .box {
+      background: #007acc;
+      color: #fff;
+      padding: 1.2rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 123, 255, 0.4);
+      font-weight: bold;
+      text-align: center;
+      min-width: 150px;
+      position: relative;
+    }
+    .flowchart .box:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.8rem;
+      color: #007acc;
+    }
+    .diagram {
+      margin: 2.5rem 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .diagram .part {
+      flex: 1 1 250px;
+      background: #eaf6ff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 20px rgba(0, 123, 255, 0.1);
+    }
+    .diagram .part h3 {
+      text-align: center;
+      color: #005a99;
+      margin-bottom: 1rem;
+    }
+    .diagram .part ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      font-size: 1rem;
+      color: #34495e;
+    }
+    .back-btn {
+      display: block;
+      margin: 3rem auto 0;
+      padding: 1rem 3rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .back-btn:hover {
+      background-color: #005a99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Human Body</h1>
+    <p>The human body is made up of many parts that work together to help us live, grow, and stay healthy. Each part of the body has a special job. Some help us move, some help us breathe, and others help us digest food or think clearly.</p>
+
+    <div class="example">
+      <strong>Example:</strong> We use our hands to write, pick up things, and eat. We use our legs to walk, run, and jump.
+    </div>
+
+    <div class="flowchart">
+      <div class="box">Head</div>
+      <div class="box">Torso</div>
+      <div class="box">Arms</div>
+      <div class="box">Legs</div>
+    </div>
+
+    <div class="diagram">
+      <div class="part">
+        <h3>Sense Organs</h3>
+        <ul>
+          <li>Eyes - Help us see</li>
+          <li>Ears - Help us hear</li>
+          <li>Skin - Helps us feel</li>
+          <li>Tongue - Helps us taste</li>
+          <li>Nose - Helps us smell</li>
+        </ul>
+      </div>
+      <div class="part">
+        <h3>Internal Organs</h3>
+        <ul>
+          <li>Heart - Pumps blood</li>
+          <li>Lungs - Help us breathe</li>
+          <li>Stomach - Helps digest food</li>
+          <li>Brain - Helps us think</li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="location.href='class1-science.html'">← Back</button>
+  </div>
+</body>
+</html>
