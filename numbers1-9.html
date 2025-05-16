@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Numbers 1 to 9 - Class 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafe;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-btn {
+      background-color: #d1d5db;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .back-btn:hover {
+      background-color: #9ca3af;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 0 auto 1rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #374151;
+      margin-bottom: 2rem;
+    }
+
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: #4f46e5;
+      color: white;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .number-label {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .emojis {
+      font-size: 1.2rem;
+      word-break: break-word;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="back-btn" onclick="location.href='class1-math.html'">← Back</button>
+      <h1>Numbers 1 to 9</h1>
+      <div style="width: 80px;"></div>
+    </div>
+
+    <div class="description">
+      <p>Let's learn the numbers from <strong>1 to 9</strong>! These are the first numbers we use to count objects. Each number tells how many items we have.</p>
+      <p>Understanding numbers helps us in counting, comparing, and doing math operations like addition and subtraction.</p>
+      <p>Here are the numbers with examples:</p>
+    </div>
+
+    <div class="numbers-grid">
+      <div class="card">
+        <div class="number-label">1</div>
+        <div class="emojis">🍎</div>
+      </div>
+      <div class="card">
+        <div class="number-label">2</div>
+        <div class="emojis">🐦🐦</div>
+      </div>
+      <div class="card">
+        <div class="number-label">3</div>
+        <div class="emojis">⚽⚽⚽</div>
+      </div>
+      <div class="card">
+        <div class="number-label">4</div>
+        <div class="emojis">📚📚📚📚</div>
+      </div>
+      <div class="card">
+        <div class="number-label">5</div>
+        <div class="emojis">✏️✏️✏️✏️✏️</div>
+      </div>
+      <div class="card">
+        <div class="number-label">6</div>
+        <div class="emojis">⭐️⭐️⭐️⭐️⭐️⭐️</div>
+      </div>
+      <div class="card">
+        <div class="number-label">7</div>
+        <div class="emojis">🌸🌸🌸🌸🌸🌸🌸</div>
+      </div>
+      <div class="card">
+        <div class="number-label">8</div>
+        <div class="emojis">🎈🎈🎈🎈🎈🎈🎈🎈</div>
+      </div>
+      <div class="card">
+        <div class="number-label">9</div>
+        <div class="emojis">🍬🍬🍬🍬🍬🍬🍬🍬🍬</div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Practice counting objects around you and try writing numbers 1 to 9 on paper!
+    </div>
+  </div>
+</body>
+</html>
